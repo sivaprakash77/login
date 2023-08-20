@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .Login {
+        border: 20px solid;
+        width: 200px;
+        padding: 200px;
+        margin: 300px 300px 300px 600px;
+        background-color: rgb(253, 225, 229);
+        background-image: url("./Assert/bg.webp");
+      }
+      input[type="text"],
+      input[type="password"] {
+        border-radius: 10px;
+        padding: 10px;
+        font-size: large;
+      }
+      input[name="login"] {
+        border-radius: 10px;
+        padding: 13px;
+        font-size: large;
+        margin-left: 60px;
+        position: relative;
+        right: 40px;
+      }
+      input[name="signup"] {
+        border-radius: 10px;
+        padding: 10px;
+        font-size: larger;
+        margin-left: 60px;
+        bottom: 2px;
+      }
+      h1 {
+        color: rgb(103, 63, 7);
+      }
+      input[name="signup"] {
+        position: relative;
+        bottom: 65px;
+        left: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Login">
+      <form action="./welcome.html">
+        <h1>Login Page</h1>
+        <label for="us">Enter the User Name</label>
+        <input
+          type="text"
+          id="us"
+          name="Username"
+          placeholder="Enter the Username"
+          required
+        /><br /><br />
+        <label for="password">Enter the password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter the password"
+          required
+        /><br /><br />
+        <input type="submit" name="login" value="Login" /><br /><br />
+      </form>
+      <form action="./signup.html">
+        <input type="submit" name="signup" value="Signup" />
+      </form>
+    </div>
+  </body>
+</html>
